@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monthsary ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: Poppins, sans-serif;
+        background: #fdeef4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .calendar {
+        background: white;
+        padding: 20px;
+        border-radius: 14px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        width: 320px;
+    }
+
+    .calendar h2 {
+        margin: 0 0 10px 0;
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th {
+        padding: 6px 0;
+        font-weight: 600;
+        color: #444;
+    }
+
+    td {
+        padding: 10px 0;
+        color: #333;
+        font-size: 16px;
+    }
+
+    td.highlight {
+        background: #ff6b9a;
+        color: white;
+        font-weight: 700;
+        border-radius: 50%;
+    }
+
+    .small-msg {
+        margin-top: 18px;
+        font-size: 14px;
+        color: #444;
+    }
+
+    #showBtn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #ff6b9a;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        display: none;
+        box-shadow: 0 4px 14px rgba(255,0,80,0.35);
+    }
+
+    #card {
+        margin-top: 25px;
+        background: white;
+        width: 90%;
+        max-width: 360px;
+        padding: 22px;
+        border-radius: 12px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+        display: none;
+        text-align: left;
+    }
+
+    .title {
+        font-family: 'Great Vibes', cursive;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+        color: #ff4d84;
+    }
+
+    .typing {
+        white-space: pre-wrap;
+        line-height: 1.55;
+        font-size: 15px;
+    }
+
+    .caret {
+        width: 8px;
+        height: 18px;
+        background: black;
+        display: inline-block;
+        animation: blink .8s infinite;
+        margin-left: 4px;
+    }
+
+    @keyframes blink {
+        50% { opacity: 0; }
+    }
+</style>
+</head>
+<body>
+
+<!-- CALENDAR -->
+<div class="calendar">
+    <h2>November 2025</h2>
+    <table>
+        <tr>
+            <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th>
+            <th>Thu</th><th>Fri</th><th>Sat</th>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td>1</td>
+        </tr>
+        <tr>
+            <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+        </tr>
+        <tr>
+            <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+        </tr>
+        <tr>
+            <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+        </tr>
+        <tr>
+            <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+            <td class="highlight">29</td>
+        </tr>
+        <tr>
+            <td>30</td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+
+    <div class="small-msg">
+        Today marks another month with you.  
+        Thank you for staying. ❤️
+    </div>
+</div>
+
+<!-- BUTTON -->
+<button id="showBtn">Click Me</button>
+
+<!-- CARD WITH TYPING -->
+<div id="card">
+    <div class="title">Adii</div>
+    <div id="typed" class="typing"></div><span id="caret" class="caret"></span>
+</div>
+
+<script>
+    // Show button after 5 seconds
+    setTimeout(() => {
+        document.getElementById("showBtn").style.display = "inline-block";
+    }, 5000);
+
+    // Monthsary long message
+    const message = 
+`Adii,
+Happy Monthsary sa’tin.
+
+Alam mo, habang tumatagal tayo, mas nare-realize ko na ikaw talaga yung tipo ng tao na hindi ko inakalang darating sa buhay ko. Hindi ko inexpect na magiging ganito ka importante sa’kin. Sa lahat ng araw na magkasama tayo, kahit sa mga simpleng usap, tawanan, tampuhan, asaran, lagi kong nararamdaman na mahalaga ako sa’yo… 
+
+Thank you for staying, kahit minsan hindi ako madali mahalin.
+Thank you for choosing me, kahit may mga araw na pagod ka o tahimik lang.
+And thank you for giving me a kind of love na hindi ko naisip na deserve ko pala.
+
+I love how you make me calm just by being yourself.
+I love how you make my days lighter, kahit hindi mo sinasadyang gawin yon.
+And I love how every moment with you, maikli man o matagal, feels like home.
+
+Hindi ko man masabi palagi, pero sobrang grateful ako na ikaw ang kasama ko ngayon.
+Everyday, pinipili kitang mahalin, pinipili kitang intindihin, pinipili kitang alagaan, at pipiliin pa rin kita bukas, sa susunod na buwan, at sa lahat ng darating pang araw.
+
+
+Gusto kong malaman mo na I’m here for you, sa good days mo, bad days, silent days, overthinking days, pagod na days, at kahit sa mga araw na feeling mo hindi ka lovable.
+I’ll still be here.
+I’ll still stay.
+I’ll still choose you.
+
+Thank you for being my peace.
+Thank you for being my happiness.
+Thank you for being my favorite place.
+
+And Adii,
+I want you to know this:
+
+Mahal na mahal kita. Hindi dahil kailangan kita, kundi dahil pipiliin kitang mahalin sa bawat oras, sa bawat araw, sa bawat buwan, kahit gaano katagal.
+
+Happy Monthsary, Adii.
+Here’s to more days, more memories, more us.
+
+I love you softly, deeply, and always. ❤️❤️`;
+
+    const typed = document.getElementById("typed");
+    const caret = document.getElementById("caret");
+
+    function typeEffect(text, i = 0) {
+        if (i < text.length) {
+            typed.textContent += text.charAt(i);
+            setTimeout(() => typeEffect(text, i + 1), 35);
+        } else {
+            caret.style.display = "none";
+        }
+    }
+
+    document.getElementById("showBtn").onclick = () => {
+        document.getElementById("card").style.display = "block";
+        typeEffect(message);
+    };
+</script>
+
+</body>
+  </html>
